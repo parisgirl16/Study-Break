@@ -22,17 +22,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJI-T7-uBZ">
-                                <rect key="frame" x="313" y="617" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="succulent-garden-border-card-design-vector-8627643" translatesAutoresizingMaskIntoConstraints="NO" id="ckV-bt-VFU">
+                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="succulent-garden-border-card-design-vector-8627643" translatesAutoresizingMaskIntoConstraints="NO" id="ckV-bt-VFU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEZ-QT-h0H">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" width="93.75" id="h6U-A6-9Q4">
+                                        <connections>
+                                            <segue destination="KaC-M8-xPv" kind="show" id="fFA-49-ge0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="93.75" id="xcF-2L-ycE">
+                                        <connections>
+                                            <segue destination="dBz-oC-UuW" kind="show" id="1WP-8v-dYY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="93.75" id="Blv-08-irk">
+                                        <connections>
+                                            <segue destination="MJo-ay-qdt" kind="show" id="tvi-NQ-lY0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="timer" image="clock.fill" catalog="system" width="93.75" id="gTZ-1U-m5V">
+                                        <connections>
+                                            <segue destination="lqF-5U-hwL" kind="show" id="94X-C4-8k1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
-                        <color key="backgroundColor" red="0.93725490196078431" green="1" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -40,18 +61,40 @@
             </objects>
             <point key="canvasLocation" x="-214" y="-2"/>
         </scene>
-        <!--View Controller-->
+        <!--Tasks View Controller-->
         <scene sceneID="4iy-ak-6V9">
             <objects>
-                <viewController id="MJo-ay-qdt" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="MJo-ay-qdt" customClass="TasksViewController" customModule="Study_Break" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2mW-Rq-6Uu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0D-Ju-isg">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" width="93.75" id="Q0P-AR-mQK">
+                                        <connections>
+                                            <segue destination="KaC-M8-xPv" kind="show" id="mPB-OP-LM1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="93.75" id="cgt-Cb-fIt">
+                                        <connections>
+                                            <segue destination="dBz-oC-UuW" kind="show" id="E4W-G6-1pC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="93.75" id="bjU-dR-doc"/>
+                                    <barButtonItem title="timer" image="clock.fill" catalog="system" width="93.75" id="wkM-gA-nDq">
+                                        <connections>
+                                            <segue destination="lqF-5U-hwL" kind="show" id="pk3-1B-OPu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kC6-xI-97v">
-                                <rect key="frame" x="34" y="138" width="307" height="482"/>
+                                <rect key="frame" x="34" y="147" width="307" height="452"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="1" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="wR6-fT-jVe">
                                         <rect key="frame" x="0.0" y="28" width="307" height="43.5"/>
@@ -60,20 +103,141 @@
                                             <rect key="frame" x="0.0" y="0.0" width="307" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="1" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="1" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="sJ7-xr-XQU"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Bfr-i7-3jW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8g3-Yh-E4o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="586.39999999999998" y="-0.44977511244377816"/>
         </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="JZR-g0-b3x">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="lqF-5U-hwL" customClass="TimerViewController" customModule="Study_Break" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c6G-jD-TsJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyh-z9-zEc">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" width="93.75" id="zXq-7a-lO0"/>
+                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="93.75" id="LZt-3C-p2c"/>
+                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="93.75" id="Sni-Nl-axL"/>
+                                    <barButtonItem title="timer" image="clock.fill" catalog="system" width="93.75" id="igp-p6-Xy2"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="1" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="VeA-6q-REj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dQ4-ox-Zax"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hB-44-nCt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1396" y="360"/>
+        </scene>
+        <!--Yoga View Controller-->
+        <scene sceneID="mvX-MT-aXC">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="KaC-M8-xPv" customClass="YogaViewController" customModule="Study_Break" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dzt-B6-WJy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RH-Zd-uLt">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" width="93.75" id="BfH-x6-N0m"/>
+                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="93.75" id="TKv-mT-rdS">
+                                        <connections>
+                                            <segue destination="dBz-oC-UuW" kind="show" id="fwZ-Xw-Jke"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="93.75" id="a2I-YM-n5L">
+                                        <connections>
+                                            <segue destination="MJo-ay-qdt" kind="show" id="XoB-VM-LKW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="timer" image="clock.fill" catalog="system" width="93.75" id="Ilw-i6-dy6">
+                                        <connections>
+                                            <segue destination="lqF-5U-hwL" kind="show" id="rsL-79-aco"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="1" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="tFO-oM-yi3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1RC-SL-IBL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDE-Ai-WED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-215" y="757"/>
+        </scene>
+        <!--Journal View Controller-->
+        <scene sceneID="1Q4-oa-X9Q">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="dBz-oC-UuW" customClass="JournalViewController" customModule="Study_Break" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QM4-0E-OM8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l92-gq-hEV">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" width="93.75" id="sLu-Sk-4ZC">
+                                        <connections>
+                                            <segue destination="KaC-M8-xPv" kind="show" id="iRx-SF-qI3"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="93.75" id="T1m-Zq-8jA"/>
+                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="93.75" id="iox-jf-gfB">
+                                        <connections>
+                                            <segue destination="MJo-ay-qdt" kind="show" id="Vvj-bj-EEo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="timer" image="clock.fill" catalog="system" width="93.75" id="2fY-U3-i5D">
+                                        <connections>
+                                            <segue destination="lqF-5U-hwL" kind="show" id="kwf-vT-24k"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="1" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="wIe-Xr-9TC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jDF-gS-E5J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="las-Ia-fcn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="757"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fwZ-Xw-Jke"/>
+        <segue reference="iRx-SF-qI3"/>
+        <segue reference="kwf-vT-24k"/>
+        <segue reference="Vvj-bj-EEo"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
+        <image name="doc.text.fill" catalog="system" width="115" height="128"/>
         <image name="succulent-garden-border-card-design-vector-8627643" width="191" height="360"/>
+        <image name="sun.haze.fill" catalog="system" width="128" height="119"/>
     </resources>
 </document>
