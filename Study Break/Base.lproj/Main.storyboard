@@ -130,9 +130,21 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" width="93.75" id="zXq-7a-lO0"/>
-                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="93.75" id="LZt-3C-p2c"/>
-                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="93.75" id="Sni-Nl-axL"/>
+                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" width="93.75" id="zXq-7a-lO0">
+                                        <connections>
+                                            <segue destination="KaC-M8-xPv" kind="show" id="Zg7-yx-Mkz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="93.75" id="LZt-3C-p2c">
+                                        <connections>
+                                            <segue destination="dBz-oC-UuW" kind="show" id="j4n-Gg-dIN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="93.75" id="Sni-Nl-axL">
+                                        <connections>
+                                            <segue destination="MJo-ay-qdt" kind="show" id="865-XD-rqP"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem title="timer" image="clock.fill" catalog="system" width="93.75" id="igp-p6-Xy2"/>
                                 </items>
                             </toolbar>
@@ -228,10 +240,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fwZ-Xw-Jke"/>
-        <segue reference="iRx-SF-qI3"/>
-        <segue reference="kwf-vT-24k"/>
-        <segue reference="Vvj-bj-EEo"/>
+        <segue reference="j4n-Gg-dIN"/>
+        <segue reference="Zg7-yx-Mkz"/>
+        <segue reference="94X-C4-8k1"/>
+        <segue reference="865-XD-rqP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
