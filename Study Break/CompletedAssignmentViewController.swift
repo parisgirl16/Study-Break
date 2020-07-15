@@ -12,7 +12,7 @@ class CompletedAssignmentViewController: UIViewController {
 
     
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UITextView!
         
         var previousVC = AssignmentsTableViewController()
         var selectedToDo : ToDoCD?
