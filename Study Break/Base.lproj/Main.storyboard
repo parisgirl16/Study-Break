@@ -345,6 +345,36 @@
                                 <color key="tintColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="barTintColor" red="0.31372549020000001" green="0.84705882349999995" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Study Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIC-O6-sFl">
+                                <rect key="frame" x="1" y="0.0" width="375" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.84705882349999995" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhm-wV-0th">
+                                <rect key="frame" x="117" y="258" width="140" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES" updatesFrequently="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbq-Rh-DfY">
+                                <rect key="frame" x="123" y="197" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.84705882349999995" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.31372549020000001" green="0.84705882349999995" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Start Timer">
+                                    <color key="titleColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startCountdown:" destination="lqF-5U-hwL" eventType="touchUpInside" id="hTb-67-Byj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="1" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -355,10 +385,13 @@
                         <viewLayoutGuide key="safeArea" id="VeA-6q-REj"/>
                     </view>
                     <navigationItem key="navigationItem" id="dQ4-ox-Zax"/>
+                    <connections>
+                        <outlet property="countdown" destination="Zhm-wV-0th" id="ZC9-6i-3vi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6hB-44-nCt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1396" y="360"/>
+            <point key="canvasLocation" x="1396" y="359.37031484257875"/>
         </scene>
         <!--Yoga View Controller-->
         <scene sceneID="mvX-MT-aXC">
@@ -542,10 +575,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fwZ-Xw-Jke"/>
-        <segue reference="iRx-SF-qI3"/>
-        <segue reference="rsL-79-aco"/>
-        <segue reference="a5b-7a-8xT"/>
+        <segue reference="j4n-Gg-dIN"/>
+        <segue reference="Zg7-yx-Mkz"/>
+        <segue reference="pk3-1B-OPu"/>
+        <segue reference="4wg-Y6-tqX"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
