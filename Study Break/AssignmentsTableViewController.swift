@@ -10,7 +10,7 @@ import UIKit
 
 class AssignmentsTableViewController: UITableViewController {
 
-        var toDos : [ToDoCD] = []
+    var toDos : [ToDoCD] = []
         
         func getToDos() {
             if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
@@ -119,11 +119,11 @@ class AssignmentsTableViewController: UITableViewController {
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             // Get the new view controller using segue.destination.
             // Pass the selected object to the new view controller.
-            if let addVC = segue.destination as? AddViewController {
+            if let addVC = segue.destination as? AddAssignmentViewController {
                 addVC.previousVC = self
             }
             
-            if let completeVC = segue.destination as? CompletedViewController {
+            if let completeVC = segue.destination as? CompletedAssignmentViewController {
                 if let toDo = sender as? ToDoCD {
                     completeVC.selectedToDo = toDo
                     completeVC.previousVC = self
@@ -133,4 +133,3 @@ class AssignmentsTableViewController: UITableViewController {
         
         
     }
-

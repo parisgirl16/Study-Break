@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Planner {
+class ToDo {
     var name = ""
     var important = false
     var descriptionInput = ""
