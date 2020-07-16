@@ -12,6 +12,7 @@ import Foundation
 class TimerViewController: UIViewController {
 
     @IBOutlet weak var countdown: UILabel!
+    @IBOutlet weak var brainBreak: UIButton!
     //declare empty timer variable
     var timer = Timer()
     var secondsLeft = 60
@@ -24,6 +25,7 @@ class TimerViewController: UIViewController {
     }
 
     @IBAction func startCountdown(_ sender: Any) {
+        brainBreak.isHidden = true
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(startTimer), userInfo: nil, repeats: true)
         timer.tolerance = 0.3
         RunLoop.current.add(timer, forMode: RunLoop.Mode.common)
@@ -52,6 +54,7 @@ class TimerViewController: UIViewController {
             timer.invalidate()
             print("Timer Done")
             self.countdown.text = "Time's Up!"
+            brainBreak.isHidden = false
         }
     }
     
