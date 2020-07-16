@@ -12,9 +12,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var quoteLabel: UILabel!
     
+    func pickQuote() {
+        let arrayCount = quotes.count - 1
+        let random = Int.random(in: 1...arrayCount)
+        print(random)
+        let quote = quotes[random]
+        print(quote)
+        self.quoteLabel.text = quote
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        pickQuote()
     }
     
     var quotes = [
@@ -68,15 +78,5 @@ class ViewController: UIViewController {
       "You must be the change you wish to see in the world. --Gandhi",
       "Keep your face to the sunshine and you can never see the shadow. --Helen Keller",
       "The best way out is always through. --Robert Frost"]
-    
-    func pickQuote() -> String {
-        let random = Int.random(in: 1...quotes.count-1)
-        print(random)
-        let quote = quotes[random]
-        print(quote)
-        self.quoteLabel.text = quote
-        return quote
-    }
-
 }
 
