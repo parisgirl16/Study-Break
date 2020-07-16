@@ -15,37 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEZ-QT-h0H">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <color key="backgroundColor" red="0.30980392159999998" green="0.59607843140000005" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="NEZ-QT-h0H" secondAttribute="height" multiplier="375:44" id="YzR-KG-gPi"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" width="93.75" id="h6U-A6-9Q4">
-                                        <connections>
-                                            <segue destination="KaC-M8-xPv" kind="show" id="fFA-49-ge0"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="93.75" id="xcF-2L-ycE">
-                                        <connections>
-                                            <segue destination="dBz-oC-UuW" kind="show" id="1WP-8v-dYY"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="93.75" id="Blv-08-irk">
-                                        <connections>
-                                            <segue destination="MJo-ay-qdt" kind="show" id="7Yb-7C-A9D"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="timer" image="clock.fill" catalog="system" width="93.75" id="gTZ-1U-m5V">
-                                        <connections>
-                                            <segue destination="lqF-5U-hwL" kind="show" id="94X-C4-8k1"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                                <color key="tintColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="barTintColor" red="0.30980392159999998" green="0.59607843140000005" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeD-td-fGe">
                                 <rect key="frame" x="57" y="57" width="261" height="506"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -68,6 +37,42 @@
                                 <color key="textColor" red="0.30980392159999998" green="0.59607843140000005" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEZ-QT-h0H">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.59607843140000005" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NEZ-QT-h0H" secondAttribute="height" multiplier="375:44" id="YzR-KG-gPi"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" id="h6U-A6-9Q4">
+                                        <connections>
+                                            <segue destination="KaC-M8-xPv" kind="show" id="fFA-49-ge0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="122.75" id="xcF-2L-ycE">
+                                        <connections>
+                                            <segue destination="dBz-oC-UuW" kind="show" id="1WP-8v-dYY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="40" id="Blv-08-irk">
+                                        <connections>
+                                            <segue destination="MJo-ay-qdt" kind="show" id="7Yb-7C-A9D"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="timer" image="clock.fill" catalog="system" width="109.75" id="gTZ-1U-m5V">
+                                        <connections>
+                                            <segue destination="lqF-5U-hwL" kind="show" id="94X-C4-8k1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="play.rectangle" catalog="system" style="plain" id="svs-qY-v9H">
+                                        <connections>
+                                            <segue destination="yLV-ga-omp" kind="show" id="nCo-Iz-enF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.30980392159999998" green="0.59607843140000005" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="1" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -93,33 +98,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0D-Ju-isg">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <color key="backgroundColor" red="0.30980392159999998" green="0.59607843140000005" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="r0D-Ju-isg" secondAttribute="height" multiplier="375:44" id="95C-dz-RDr"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" width="93.75" id="Q0P-AR-mQK">
-                                        <connections>
-                                            <segue destination="KaC-M8-xPv" kind="show" id="mPB-OP-LM1"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="93.75" id="cgt-Cb-fIt">
-                                        <connections>
-                                            <segue destination="dBz-oC-UuW" kind="show" id="E4W-G6-1pC"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="93.75" id="bjU-dR-doc"/>
-                                    <barButtonItem title="timer" image="clock.fill" catalog="system" width="93.75" id="wkM-gA-nDq">
-                                        <connections>
-                                            <segue destination="lqF-5U-hwL" kind="show" id="pk3-1B-OPu"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                                <color key="tintColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="barTintColor" red="0.30980392159999998" green="0.59607843140000005" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Homework Planner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jia-Ow-1bj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                 <color key="backgroundColor" red="0.30980392159999998" green="0.59607843140000005" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -142,6 +120,38 @@
                                     <segue destination="fko-hx-oDj" kind="show" id="4Wd-Yo-ZG2"/>
                                 </connections>
                             </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0D-Ju-isg">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.59607843140000005" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="r0D-Ju-isg" secondAttribute="height" multiplier="375:44" id="95C-dz-RDr"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" width="88" id="Q0P-AR-mQK">
+                                        <connections>
+                                            <segue destination="KaC-M8-xPv" kind="show" id="mPB-OP-LM1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="74.75" id="cgt-Cb-fIt">
+                                        <connections>
+                                            <segue destination="dBz-oC-UuW" kind="show" id="E4W-G6-1pC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="68.75" id="bjU-dR-doc"/>
+                                    <barButtonItem title="timer" image="clock.fill" catalog="system" width="77.75" id="wkM-gA-nDq">
+                                        <connections>
+                                            <segue destination="lqF-5U-hwL" kind="show" id="pk3-1B-OPu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="play.rectangle" catalog="system" style="plain" id="eC5-Nw-e56">
+                                        <connections>
+                                            <segue destination="yLV-ga-omp" kind="show" id="THf-aZ-m3k"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.30980392159999998" green="0.59607843140000005" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490196078431" green="1" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -341,22 +351,27 @@
                                     <constraint firstAttribute="width" secondItem="hyh-z9-zEc" secondAttribute="height" multiplier="375:44" id="NwT-2t-9gv"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" width="93.75" id="zXq-7a-lO0">
+                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" width="68" id="zXq-7a-lO0">
                                         <connections>
                                             <segue destination="KaC-M8-xPv" kind="show" id="Zg7-yx-Mkz"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="93.75" id="LZt-3C-p2c">
+                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="86.75" id="LZt-3C-p2c">
                                         <connections>
                                             <segue destination="dBz-oC-UuW" kind="show" id="j4n-Gg-dIN"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="93.75" id="Sni-Nl-axL">
+                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="84.75" id="Sni-Nl-axL">
                                         <connections>
                                             <segue destination="MJo-ay-qdt" kind="show" id="4wg-Y6-tqX"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem title="timer" image="clock.fill" catalog="system" width="93.75" id="igp-p6-Xy2"/>
+                                    <barButtonItem image="play.rectangle" catalog="system" style="plain" id="ekn-4A-Vnt">
+                                        <connections>
+                                            <segue destination="yLV-ga-omp" kind="show" id="OVN-fJ-ywL"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <color key="tintColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="barTintColor" red="0.30980392159999998" green="0.59607843140000005" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -443,13 +458,13 @@
                                     <constraint firstAttribute="width" secondItem="5RH-Zd-uLt" secondAttribute="height" multiplier="375:44" id="ktK-O2-Dcu"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" width="93.75" id="BfH-x6-N0m"/>
-                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="93.75" id="TKv-mT-rdS">
+                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" width="62" id="BfH-x6-N0m"/>
+                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="85.75" id="TKv-mT-rdS">
                                         <connections>
                                             <segue destination="dBz-oC-UuW" kind="show" id="fwZ-Xw-Jke"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="93.75" id="a2I-YM-n5L">
+                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="77.75" id="a2I-YM-n5L">
                                         <connections>
                                             <segue destination="MJo-ay-qdt" kind="show" id="a5b-7a-8xT"/>
                                         </connections>
@@ -457,6 +472,11 @@
                                     <barButtonItem title="timer" image="clock.fill" catalog="system" width="93.75" id="Ilw-i6-dy6">
                                         <connections>
                                             <segue destination="lqF-5U-hwL" kind="show" id="rsL-79-aco"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="play.rectangle" catalog="system" style="plain" id="SPi-eE-7db">
+                                        <connections>
+                                            <segue destination="yLV-ga-omp" kind="show" id="BRS-qo-ySe"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -554,13 +574,13 @@
                                     <constraint firstAttribute="width" secondItem="l92-gq-hEV" secondAttribute="height" multiplier="375:44" id="bub-a0-jex"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" width="93.75" id="sLu-Sk-4ZC">
+                                    <barButtonItem title="sun" image="sun.haze.fill" catalog="system" width="75" id="sLu-Sk-4ZC">
                                         <connections>
                                             <segue destination="KaC-M8-xPv" kind="show" id="iRx-SF-qI3"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="93.75" id="T1m-Zq-8jA"/>
-                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="93.75" id="iox-jf-gfB">
+                                    <barButtonItem title="Item" image="doc.text.fill" catalog="system" width="82.75" id="T1m-Zq-8jA"/>
+                                    <barButtonItem title="tasks" image="checkmark.square.fill" catalog="system" width="83.75" id="iox-jf-gfB">
                                         <connections>
                                             <segue destination="MJo-ay-qdt" kind="show" id="Dfd-ZU-5AB"/>
                                         </connections>
@@ -568,6 +588,11 @@
                                     <barButtonItem title="timer" image="clock.fill" catalog="system" width="93.75" id="2fY-U3-i5D">
                                         <connections>
                                             <segue destination="lqF-5U-hwL" kind="show" id="kwf-vT-24k"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="play.rectangle" catalog="system" style="plain" id="TH8-QC-JDt">
+                                        <connections>
+                                            <segue destination="yLV-ga-omp" kind="show" id="tpy-3q-zdk"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -808,6 +833,31 @@
             </objects>
             <point key="canvasLocation" x="1812" y="1105.9970014992505"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="wLL-Te-1O3">
+            <objects>
+                <viewController id="yLV-ga-omp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W0c-Qk-L2K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vnA-nE-bfa">
+                                <rect key="frame" x="0.0" y="603" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="wJn-6d-Rhx"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kuk-tT-SAt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Ho-4i-bSW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcg-YN-FDT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2609" y="798"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="XqJ-9u-i40">
             <objects>
@@ -848,15 +898,17 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="OVN-fJ-ywL"/>
         <segue reference="j4n-Gg-dIN"/>
-        <segue reference="Zg7-yx-Mkz"/>
-        <segue reference="94X-C4-8k1"/>
+        <segue reference="RHf-tY-FO5"/>
+        <segue reference="rsL-79-aco"/>
         <segue reference="4wg-Y6-tqX"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
         <image name="clock.fill" catalog="system" width="128" height="121"/>
         <image name="doc.text.fill" catalog="system" width="115" height="128"/>
+        <image name="play.rectangle" catalog="system" width="128" height="93"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="sun.haze.fill" catalog="system" width="128" height="119"/>
     </resources>
