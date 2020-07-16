@@ -842,7 +842,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eV7-Yl-CGw">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eV7-Yl-CGw">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <color key="backgroundColor" red="0.30980392159999998" green="0.59607843140000005" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -877,6 +877,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="1" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="eV7-Yl-CGw" firstAttribute="trailing" secondItem="kuk-tT-SAt" secondAttribute="trailing" id="IMl-mB-0e5"/>
+                            <constraint firstItem="eV7-Yl-CGw" firstAttribute="leading" secondItem="kuk-tT-SAt" secondAttribute="leading" id="jFn-Ga-eZs"/>
+                            <constraint firstItem="eV7-Yl-CGw" firstAttribute="bottom" secondItem="kuk-tT-SAt" secondAttribute="bottom" id="lJz-Ek-EHH"/>
                             <constraint firstItem="eV7-Yl-CGw" firstAttribute="width" secondItem="eV7-Yl-CGw" secondAttribute="height" multiplier="375:44" id="uCc-ge-mo9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kuk-tT-SAt"/>
