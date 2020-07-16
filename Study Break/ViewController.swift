@@ -10,13 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var quoteLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-    var quotes =
-      ["Make each day your masterpiece. --John Wooden",
+    var quotes = [
+        "Make each day your masterpiece. --John Wooden",
        "The difference between ordinary and extraordinary is that little extra. --Jimmy Johnson",
        "All our dreams can come true--if we have the courage to pursue them. --Walt Disney",
        "Always be a first-rate version of yourself, instead of a second-rate version of somebody else. --Judy Garland",
@@ -67,15 +69,12 @@ class ViewController: UIViewController {
       "Keep your face to the sunshine and you can never see the shadow. --Helen Keller",
       "The best way out is always through. --Robert Frost"]
     
-    
-    @IBOutlet weak var morningQuotes: UILabel!
-    
     func pickQuote() -> String {
         let random = Int.random(in: 1...quotes.count-1)
         print(random)
         let quote = quotes[random]
         print(quote)
-        self.morningQuotes.text = quote
+        self.quoteLabel.text = quote
         return quote
     }
 

@@ -10,6 +10,10 @@
 		18111E4524BF680D00238520 /* AssignmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18111E4424BF680D00238520 /* AssignmentsTableViewController.swift */; };
 		18111E4724BF6A1400238520 /* AddAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18111E4624BF6A1400238520 /* AddAssignmentViewController.swift */; };
 		18111E4924BF6C1400238520 /* CompletedAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18111E4824BF6C1400238520 /* CompletedAssignmentViewController.swift */; };
+		1863F0E324C0AC1D00A0D25B /* JournalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863F0E224C0AC1D00A0D25B /* JournalsTableViewController.swift */; };
+		1863F0E524C0AD0B00A0D25B /* AddJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863F0E424C0AD0B00A0D25B /* AddJournalViewController.swift */; };
+		1863F0E724C0AD3A00A0D25B /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863F0E624C0AD3A00A0D25B /* Journal.swift */; };
+		1863F0EB24C0B3F700A0D25B /* DeletedJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863F0EA24C0B3F700A0D25B /* DeletedJournalViewController.swift */; };
 		186505A624BE5F7C00FD3ADF /* YogaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186505A524BE5F7C00FD3ADF /* YogaViewController.swift */; };
 		186505A824BE60C800FD3ADF /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186505A724BE60C800FD3ADF /* TimerViewController.swift */; };
 		18A5BAF424BE5925009A881E /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5BAF324BE5925009A881E /* JournalViewController.swift */; };
@@ -47,6 +51,10 @@
 		18111E4424BF680D00238520 /* AssignmentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentsTableViewController.swift; sourceTree = "<group>"; };
 		18111E4624BF6A1400238520 /* AddAssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAssignmentViewController.swift; sourceTree = "<group>"; };
 		18111E4824BF6C1400238520 /* CompletedAssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedAssignmentViewController.swift; sourceTree = "<group>"; };
+		1863F0E224C0AC1D00A0D25B /* JournalsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalsTableViewController.swift; sourceTree = "<group>"; };
+		1863F0E424C0AD0B00A0D25B /* AddJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalViewController.swift; sourceTree = "<group>"; };
+		1863F0E624C0AD3A00A0D25B /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		1863F0EA24C0B3F700A0D25B /* DeletedJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletedJournalViewController.swift; sourceTree = SOURCE_ROOT; };
 		186505A524BE5F7C00FD3ADF /* YogaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaViewController.swift; sourceTree = "<group>"; };
 		186505A724BE60C800FD3ADF /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		18A5BAF324BE5925009A881E /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
@@ -117,15 +125,19 @@
 		18F48D2524BE3245008AEE97 /* Study Break */ = {
 			isa = PBXGroup;
 			children = (
+				1863F0EA24C0B3F700A0D25B /* DeletedJournalViewController.swift */,
 				18B91E5524BF59120022BD4D /* TasksViewController.swift */,
 				18F48D2624BE3245008AEE97 /* AppDelegate.swift */,
 				18F48D2824BE3245008AEE97 /* SceneDelegate.swift */,
 				18F48D2A24BE3245008AEE97 /* ViewController.swift */,
 				18F48D2C24BE3245008AEE97 /* Main.storyboard */,
+				1863F0E424C0AD0B00A0D25B /* AddJournalViewController.swift */,
+				1863F0E224C0AC1D00A0D25B /* JournalsTableViewController.swift */,
 				18111E4624BF6A1400238520 /* AddAssignmentViewController.swift */,
 				18111E4824BF6C1400238520 /* CompletedAssignmentViewController.swift */,
 				18111E4424BF680D00238520 /* AssignmentsTableViewController.swift */,
 				18B91E5924BF5C670022BD4D /* ToDo.swift */,
+				1863F0E624C0AD3A00A0D25B /* Journal.swift */,
 				186505A524BE5F7C00FD3ADF /* YogaViewController.swift */,
 				186505A724BE60C800FD3ADF /* TimerViewController.swift */,
 				18A5BAF324BE5925009A881E /* JournalViewController.swift */,
@@ -290,11 +302,15 @@
 				18F48D3124BE3245008AEE97 /* Study_Break.xcdatamodeld in Sources */,
 				18111E4724BF6A1400238520 /* AddAssignmentViewController.swift in Sources */,
 				18111E4924BF6C1400238520 /* CompletedAssignmentViewController.swift in Sources */,
+				1863F0E524C0AD0B00A0D25B /* AddJournalViewController.swift in Sources */,
 				18F48D2724BE3245008AEE97 /* AppDelegate.swift in Sources */,
+				1863F0EB24C0B3F700A0D25B /* DeletedJournalViewController.swift in Sources */,
 				18F48D2924BE3245008AEE97 /* SceneDelegate.swift in Sources */,
+				1863F0E324C0AC1D00A0D25B /* JournalsTableViewController.swift in Sources */,
 				186505A824BE60C800FD3ADF /* TimerViewController.swift in Sources */,
 				18A5BAF424BE5925009A881E /* JournalViewController.swift in Sources */,
 				18B91E5A24BF5C670022BD4D /* ToDo.swift in Sources */,
+				1863F0E724C0AD3A00A0D25B /* Journal.swift in Sources */,
 				18B91E5624BF59120022BD4D /* TasksViewController.swift in Sources */,
 				18111E4524BF680D00238520 /* AssignmentsTableViewController.swift in Sources */,
 				186505A624BE5F7C00FD3ADF /* YogaViewController.swift in Sources */,
